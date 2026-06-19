@@ -2,3 +2,4 @@
 {"ts":1781881125,"step":"m1","status":"done","detail":"13/13 unit tests pass, build exit 0, committed eec6a56"}
 {"ts":1781881642,"step":"m2","status":"done","detail":"32/32 tests (13 domain + 19 api), npm start serves on 3001, fixed dev/start scripts, committed d13b9ca"}
 {"ts":1781882003,"step":"m3","status":"done","detail":"UI served on 3001 (index.html+app.js, stable ids), 32/32 tests, build 0, committed pending"}
+{"ts":1781882398,"step":"m4","status":"done","detail":"e2e 1/1 (Chromium full flow), tester PASS real Chrome with settle-up screenshot, balances +50/-10/-40, 2 minimal txns; all gates green"}
