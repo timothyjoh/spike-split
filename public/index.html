@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Split</title>
+</head>
+<body>
+  <h1>Split</h1>
+
+  <!-- Error/status display -->
+  <p id="error" style="color:red"></p>
+
+  <!-- Section 1: Create group -->
+  <section id="section-create-group">
+    <h2>Create Group</h2>
+    <input id="group-name" type="text" placeholder="Group name">
+    <button id="create-group">Create Group</button>
+  </section>
+
+  <!-- Section 2: Members (shown after group created) -->
+  <section id="section-members" style="display:none">
+    <h2>Members</h2>
+    <ul id="members-list"></ul>
+    <input id="member-name" type="text" placeholder="Member name">
+    <button id="add-member">Add Member</button>
+  </section>
+
+  <!-- Section 3: Add expense (shown after >=1 member) -->
+  <section id="section-expense" style="display:none">
+    <h2>Add Expense</h2>
+    <select id="payer-select"></select>
+    <input id="amount" type="number" step="0.01" min="0.01" placeholder="Amount ($)">
+    <input id="description" type="text" placeholder="Description (optional)">
+    <button id="add-expense">Add Expense</button>
+  </section>
+
+  <!-- Section 4: View results -->
+  <section id="section-results" style="display:none">
+    <button id="show-balances">View Balances</button>
+    <ul id="balances-list"></ul>
+    <button id="show-settleup">View Settle-Up</button>
+    <ul id="settleup-list"></ul>
+  </section>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

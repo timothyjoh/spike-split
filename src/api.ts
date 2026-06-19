@@ -1,3 +1,4 @@
+import path from "node:path";
 import type Database from "better-sqlite3";
 import express, { type Request, type Response, type NextFunction } from "express";
 import {
@@ -11,9 +12,16 @@ import {
 } from "./repo.js";
 import { computeBalances, settleUp } from "./domain.js";
 
-export function createApp(db: Database.Database): express.Express {
+export function createApp(db: Database.Database, publicDir?: string): express.Express {
   const app = express();
   app.use(express.json());
+
+  if (publicDir) {
+    app.use(express.static(publicDir));
+    app.get("/", (_req, res) => {
+      res.sendFile(path.join(publicDir, "index.html"));
+    });
+  }
 
   // POST /api/groups
   app.post("/api/groups", (req: Request, res: Response) => {

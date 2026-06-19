@@ -1,2 +1,4 @@
 {"ts":1750000000,"step":"init","status":"ok","detail":"decomposed PROJECT.md into 4 vertical milestones m1-m4"}
 {"ts":1781881125,"step":"m1","status":"done","detail":"13/13 unit tests pass, build exit 0, committed eec6a56"}
+{"ts":1781881642,"step":"m2","status":"done","detail":"32/32 tests (13 domain + 19 api), npm start serves on 3001, fixed dev/start scripts, committed d13b9ca"}
+{"ts":1781882003,"step":"m3","status":"done","detail":"UI served on 3001 (index.html+app.js, stable ids), 32/32 tests, build 0, committed pending"}

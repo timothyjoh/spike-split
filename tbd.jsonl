@@ -1,4 +1,4 @@
 {"id":"m1","title":"Scaffold + domain core (schema, balances, settle-up algorithm, unit tests)","state":"done"}
-{"id":"m2","title":"REST API (group/member/expense/balances/settle-up) + integration tests","state":"todo"}
-{"id":"m3","title":"Minimal UI (create group, members, expense, balances, settle-up plan)","state":"todo"}
+{"id":"m2","title":"REST API (group/member/expense/balances/settle-up) + integration tests","state":"done"}
+{"id":"m3","title":"Minimal UI (create group, members, expense, balances, settle-up plan)","state":"done"}
 {"id":"m4","title":"E2E Playwright flow + browser verify","state":"todo"}

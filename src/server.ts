@@ -10,8 +10,11 @@ const PORT = Number(process.env.PORT ?? 3001);
 // Ensure data directory exists
 fs.mkdirSync(path.dirname(path.resolve(DB_PATH)), { recursive: true });
 
+const __dirname2 = path.dirname(fileURLToPath(import.meta.url));
+const PUBLIC_DIR = path.resolve(__dirname2, "../../public");
+
 const db = openDb(DB_PATH);
-const app = createApp(db);
+const app = createApp(db, PUBLIC_DIR);
 
 // Only listen when run as the main entry point, not when imported in tests
 const thisFile = fileURLToPath(import.meta.url);
