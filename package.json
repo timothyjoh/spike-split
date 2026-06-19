@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "node --watch --experimental-strip-types src/server.ts",
-    "start": "node dist/server.js",
+    "dev": "npm run build && node dist/src/server.js",
+    "start": "npm run build && node dist/src/server.js",
     "build": "tsc",
     "test": "vitest run",
     "e2e": "playwright test"
